@@ -26,14 +26,7 @@ fun CategoriasScreen(navController: NavController) {
     val viewModel: ProductosViewModel = viewModel()
 
     Column(modifier = Modifier.fillMaxSize()) {
-        Button(
-            onClick = { navController.popBackStack() },
-            modifier = Modifier
-                .padding(16.dp)
-                .align(Alignment.Start) // Asegura que el botón esté alineado a la izquierda
-        ) {
-            Text(text = "Regresar")
-        }
+
 
         LazyRow(
             modifier = Modifier
