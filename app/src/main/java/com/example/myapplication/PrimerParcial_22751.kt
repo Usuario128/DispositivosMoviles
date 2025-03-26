@@ -15,7 +15,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Remove
+import androidx.compose.material.icons.filled.AddCircle
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -40,7 +40,7 @@ import androidx.compose.ui.unit.dp
 
 @Preview(showBackground = true)
 @Composable
-fun Juego() {
+fun juego() {
 
     var qr by remember {
         mutableStateOf("0")
@@ -151,7 +151,7 @@ fun Juego() {
                             else
                                 JANNIK = JANNIK - 15},
                             modifier = Modifier
-                        ) { Icon(imageVector = Icons.Default.Remove, contentDescription = "icono")
+                        ) { Icon(imageVector = Icons.Default.AddCircle, contentDescription = "icono")
                         }
 
                         Text(text = "$JANNIK")
@@ -201,7 +201,7 @@ fun Juego() {
                                 BOB = BOB - 15
                             qw = BOB.toString()},
                             modifier = Modifier
-                        ) { Icon(imageVector = Icons.Default.Remove, contentDescription = "icono")
+                        ) { Icon(imageVector = Icons.Default.AddCircle, contentDescription = "icono")
                         }
 
                         Text(text = "$BOB")
